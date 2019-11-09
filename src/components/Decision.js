@@ -17,11 +17,11 @@ const Decision = () => (
         <Link to='/Dog'>Dog</Link>
       </button>
       <button className="CreatePet-button">
-        Cat
-        </button>
+        <Link to='/Cat'>Cat</Link>
+      </button>
       <button className="CreatePet-button">
-        Bird
-        </button>
+        <Link to='/Bird'>Bird</Link>
+      </button>
     </div>
   </div>
 )

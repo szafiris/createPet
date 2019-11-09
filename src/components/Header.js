@@ -8,6 +8,7 @@ const Header = () => (
     <p>
       Create a Pet
     </p>
+    <Link to='/'>Home</Link>
   </header>
 )
 

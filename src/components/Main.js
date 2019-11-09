@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import Dog from './Dog'
 import Decision from './Decision';
+import Cat from "./Cat";
+import Bird from "./Bird";
 
 
 // The Main component renders one of the three provided
@@ -19,6 +21,8 @@ const Main = () => (
     <Switch>
       <Route exact path='/' component={Decision} />
       <Route path='/dog' component={Dog} />
+      <Route path='/cat' component={Cat} />
+      <Route path='/bird' component={Bird} />
     </Switch>
   </Router>
 )
