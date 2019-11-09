@@ -10,15 +10,25 @@ function CreatePet() {
           Create a Pet
         </p>
       </header>
-      <button>
-        Dog
-      </button>
-      <button>
-        Cat
-      </button>
-      <button>
-        Bird
-      </button>
+      <div className="CreatePet-text">
+        <text>
+          Feeling Lonely? {"\n"}
+          Need a Friend? {"\n"}
+          We will generate one for you. {"\n"}
+          I want a...
+        </text>
+      </div>
+      <div>
+        <button className="CreatePet-button">
+          Dog
+        </button>
+        <button className="CreatePet-button">
+          Cat
+        </button>
+        <button className="CreatePet-button">
+          Bird
+        </button>
+      </div>
     </div>
   );
 }
