@@ -22,9 +22,9 @@ const Dog = () => {
   return (
     <div className="CreatePet-dog">
       <div className="CreatePet-text" style={{ marginTop: 30 }}>
-        Here is your new dog! {JSON.stringify(image["url"])}
+        Here is your new dog! {image["url"]}
       </div>
-      <img src={JSON.stringify(image["url"])} alt="A dog" style={{ marginTop: 30 }}></img>
+      <img src={image["url"]} alt="A dog" style={{ marginTop: 30, width: 200, height: 200 }}></img>
       <div className="CreatePet-text" style={{ marginTop: 30 }}>
         Want Another?
       </div>
@@ -43,3 +43,9 @@ const Dog = () => {
 }
 
 export default Dog
+
+// my_dic = {
+// }
+// for line in file:
+//   temp = line.split()
+// my_dic[temp[0]] = {}
