@@ -26,9 +26,9 @@
   height: 50px;
   width: 100px;
   margin: 20px;
-  background-color:#cc7700;
+  background-color:#ffffff;
   border-color: #cc7700;
-  border-width: 1px;
+  border-width: 5px;
   border-radius: 5px;
   display: flex 2;
   color: "white"
@@ -47,4 +47,11 @@
 
 .CreatePet-full {
   background-color: #b2d8d8;
+}
+
+.CreatePet-dog {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }

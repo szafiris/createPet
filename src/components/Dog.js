@@ -1,49 +1,45 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import './CreatePet.css';
-import Header from "./Header"
 import { createPet } from "../api"
+import { Link } from 'react-router-dom'
 
 
 const Dog = () => {
-  // const [error, setError] = useState(null)
-  // const [image, setImage] = useState([])
-  // const createDog = async event => {
-  //   // event.preventDefault()
+  const [error, setError] = useState(false)
+  const [image, setImage] = useState([])
 
-  //   setError(null)
-  //   console.log("it is called")
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch("https://random.dog/woof.json/");
+      res
+        .json()
+        .then(res => setImage(res))
+        .catch(err => setError(err));
+    }
+    fetchData();
+  }, []);
 
-
-  // }
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     // You can await here
-  //     try {
-  //       console.log("HELP")
-  //       const result = await createPet({
-  //         decision: "shibes"
-  //       })
-  //       console.log("CALLLED")
-  //       console.log(result[0])
-  //       setImage(result[0])
-  //     } catch (error) {
-  //       setError('Sorry, someone let the dogs out')
-  //     }
-  //     // const response = await MyAPI.getData(someId);
-  //     // ...
-  //   }
-  //   fetchData();
-  // }, []);
   return (
-    <div>
-      <div>
-        A DOG!
+    <div className="CreatePet-dog">
+      <div className="CreatePet-text" style={{ marginTop: 30 }}>
+        Here is your new dog! {JSON.stringify(image["url"])}
       </div>
-      <img src="https://cdn.shibe.online/shibes/447eef66f38e1fbeef5b801bef16777c5d654a6d.jpg" alt="A dog"></img>
+      <img src={JSON.stringify(image["url"])} alt="A dog" style={{ marginTop: 30 }}></img>
+      <div className="CreatePet-text" style={{ marginTop: 30 }}>
+        Want Another?
+      </div>
+      <Link to='/Cat' style={{ textDecoration: 'none', color: 'white' }}>
+        <button className="CreatePet-button">
+          Cat
+        </button>
+      </Link>
+      <Link to='/Bird' style={{ textDecoration: 'none', color: 'white' }}>
+        <button className="CreatePet-button">
+          Bird
+        </button>
+      </Link>
     </div >
   )
-
 }
 
 export default Dog
