@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from './Header'
 import Main from './Main'
-import Decision from './Decision'
+import './CreatePet.css';
 
 const App = () => (
-  <div>
+  <div className="createPet-full">
     <Header />
     <Main />
   </div>

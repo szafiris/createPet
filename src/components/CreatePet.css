@@ -7,29 +7,44 @@
 }
 
 .CreatePet-header {
-  background-color: lavender;
+  background-color: #006666;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-size: calc(20px + 2vmin);
   color: white;
+  font-family: 'Lucida Sans';
 }
 
 .CreatePet-link {
-  color: #09d3ac;
+  color: white;
 }
 
 .CreatePet-button {
   height: 50px;
   width: 100px;
   margin: 20px;
-  background-color: blue;
-  border-color: blue;
+  background-color:#cc7700;
+  border-color: #cc7700;
+  border-width: 1px;
+  border-radius: 5px;
   display: flex 2;
+  color: "white"
 }
 
 .CreatePet-text {
   font-size: 50px;
+  color: white;
+  font-family: 'Lucida Sans';
+}
+
+.CreatePet-link {
+  text-decoration: 'none';
+  color: 'white';
+}
+
+.CreatePet-full {
+  background-color: #b2d8d8;
 }

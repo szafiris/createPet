@@ -5,25 +5,38 @@ import Header from "./Header"
 
 
 const Decision = () => (
-  <div className="CreatePet">
-    <div className="CreatePet-text">
+  <div>
+    <div className="CreatePet-text" style={{ marginLeft: 50, marginTop: 50 }}>
       Feeling Lonely? {"\n"}
+    </div>
+    <div className="CreatePet-text" style={{ marginLeft: 133 }}>
       Need a Friend? {"\n"}
+    </div>
+    <div className="CreatePet-text" style={{ marginLeft: 216 }}>
       We will generate one for you. {"\n"}
+    </div>
+    <div className="CreatePet-text" style={{ marginLeft: 300 }}>
       I want a...
     </div>
-    <div>
-      <button className="CreatePet-button">
-        <Link to='/Dog'>Dog</Link>
-      </button>
-      <button className="CreatePet-button">
-        <Link to='/Cat'>Cat</Link>
-      </button>
-      <button className="CreatePet-button">
-        <Link to='/Bird'>Bird</Link>
-      </button>
+
+    <div className="CreatePet">
+      <Link to='/Dog' style={{ textDecoration: 'none', color: 'white' }}>
+        <button className="CreatePet-button">
+          Dog
+        </button>
+      </Link>
+      <Link to='/Cat' style={{ textDecoration: 'none', color: 'white' }}>
+        <button className="CreatePet-button">
+          Cat
+        </button>
+      </Link>
+      <Link to='/Bird' style={{ textDecoration: 'none', color: 'white' }}>
+        <button className="CreatePet-button">
+          Bird
+        </button>
+      </Link>
     </div>
-  </div>
+  </div >
 )
 
 export default Decision
