@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './CreatePet.css';
-import { createPet } from "../api"
-import { Link } from 'react-router-dom';
 import Name from "./Name"
 
 
