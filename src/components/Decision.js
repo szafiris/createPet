@@ -24,16 +24,6 @@ const Decision = () => (
           Dog
         </button>
       </Link>
-      <Link to='/Cat' style={{ textDecoration: 'none', color: 'white' }}>
-        <button className="CreatePet-button">
-          Cat
-        </button>
-      </Link>
-      <Link to='/Bird' style={{ textDecoration: 'none', color: 'white' }}>
-        <button className="CreatePet-button">
-          Bird
-        </button>
-      </Link>
     </div>
   </div >
 )
