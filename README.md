@@ -1,6 +1,3 @@
 A website to generate your own special friend
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Made using the https://uinames.com/ api and the https://random.dog/woof.json api
