@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/createPet/static/css/main.1a2380a4.chunk.css",
+    "main.js": "/createPet/static/js/main.a52f3cb1.chunk.js",
+    "main.js.map": "/createPet/static/js/main.a52f3cb1.chunk.js.map",
+    "runtime-main.js": "/createPet/static/js/runtime-main.7df43436.js",
+    "runtime-main.js.map": "/createPet/static/js/runtime-main.7df43436.js.map",
+    "static/js/2.d877b499.chunk.js": "/createPet/static/js/2.d877b499.chunk.js",
+    "static/js/2.d877b499.chunk.js.map": "/createPet/static/js/2.d877b499.chunk.js.map",
+    "index.html": "/createPet/index.html",
+    "precache-manifest.f947d5fb195c1868ff046604f277bf65.js": "/createPet/precache-manifest.f947d5fb195c1868ff046604f277bf65.js",
+    "service-worker.js": "/createPet/service-worker.js",
+    "static/css/main.1a2380a4.chunk.css.map": "/createPet/static/css/main.1a2380a4.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7df43436.js",
+    "static/js/2.d877b499.chunk.js",
+    "static/css/main.1a2380a4.chunk.css",
+    "static/js/main.a52f3cb1.chunk.js"
+  ]
+}
