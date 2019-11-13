@@ -10,7 +10,7 @@ import Decision from './Decision';
 const Main = () => (
   <Router>
     <Switch>
-      <Route exact path='/' component={Decision} />
+      <Route path='/' component={Decision} />
       <Route path='/dog' component={Dog} />
     </Switch>
   </Router>
